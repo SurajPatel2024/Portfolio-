@@ -367,7 +367,7 @@
     <!-- Skills Section -->
     <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills <i class="fas fa-cogs"></i></h2>
+        <h2>Skills  <i id="gear1"   class="fas fa-cog"></i> <i id="gear2"  class="fas fa-cog"></i> </h2>
         <p>Proficient in HTML, CSS, JavaScript, Node.js, Express, MongoDB, and various frontend frameworks. Always eager
             to learn new tools and technologies.</p>
         <div class="skills-container">
@@ -375,7 +375,7 @@
             <div class="skill">
                 <h3>HTML <i class="fab fa-html5"></i></h3>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
+                    <div class="progress" data-width="90%"></div>
                 </div>
                 <span>90%</span>
             </div>
@@ -384,16 +384,16 @@
             <div class="skill">
                 <h3>CSS <i class="fab fa-css3-alt"></i></h3>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 85%;"></div>
+                    <div class="progress"   data-width="85%"  ></div>
                 </div>
                 <span>85%</span>
             </div>
 
             <!-- Skill 3: JavaScript -->
             <div class="skill">
-                <h3>JavaScript <i class="fab fa-js-square"></i></h3>
+                <h3>JavaScript <i  class="fab fa-js-square"></i></h3>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 80%;"></div>
+                    <div class="progress"   data-width="80%"  ></div>
                 </div>
                 <span>80%</span>
             </div>
@@ -402,7 +402,7 @@
             <div class="skill">
                 <h3>Node.js <i class="fab fa-js-square"></i></h3>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 75%;"></div>
+                    <div class="progress" data-width="75%"  ></div>
                 </div>
                 <span>75%</span>
             </div>
@@ -411,7 +411,7 @@
             <div class="skill">
                 <h3>Express.js <i class="fas fa-file-code"></i></h3>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 70%;"></div>
+                    <div class="progress"  data-width="70%"   ></div>
                 </div>
                 <span>70%</span>
             </div>
@@ -421,13 +421,42 @@
                 <h3>MongoDB  <i class="fas fa-database"></i></h3>
                 
                 <div class="progress-bar">
-                    <div class="progress" style="width: 65%;"></div>
+                    <div class="progress" data-width="65%"   ></div>
                 </div>
                 <span>65%</span>
             </div>
         </div>
     </section>
 
+ 
+
+    <script>
+        let lastScrollTop = 0;
+      
+        window.addEventListener('scroll', () => {
+          const skillsSection = document.getElementById('skills');
+          const rect = skillsSection.getBoundingClientRect();
+          const inView = rect.top <= window.innerHeight && rect.bottom >= 0;
+      
+          const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+          const scrollingDown = currentScroll > lastScrollTop;
+          lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      
+          const progressBars = document.getElementsByClassName('progress');
+      
+          if (inView) {
+            for (let i = 0; i < progressBars.length; i++) {
+              const targetWidth = progressBars[i].getAttribute('data-width');
+              progressBars[i].style.width = scrollingDown ? targetWidth : '0%';
+            }
+          }
+        });
+      </script>
+      
+      
+      
+      
+      
     <!-- Add CSS for the skill progress bars -->
     <style>
         /* Skills Section */
@@ -481,18 +510,39 @@
         }
 
         .progress {
+            width: 0%;
             background-color: #39ff14;
             height: 100%;
             border-radius: 10px;
-            transition: width 1s ease-in-out;
+            transition: width 2s ease;
         }
 
         .skill span {
             font-size: 1rem;
             color: #aaa;
         }
-
-
+        #gear2{
+            position: relative;
+            
+             top: 10px;
+             left: -1%;
+        }
+      
+       #gear1, #gear2{
+           font-size: 25px;
+           animation: g 1s infinite;
+       }
+       @keyframes g {
+           10%{
+                 transform: rotate(100deg);
+           }
+           50%{
+            transform: rotate(180deg);
+           }
+           99%{
+            transform: rotate(360deg);
+           }
+       }
   
 
 
