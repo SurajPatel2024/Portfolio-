@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -882,9 +882,7 @@
       </div>
     </div>
     <div class="hero-image">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/3/34/Icon_hacker.png"
-        alt="Profile Image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Icon_hacker.png" alt="Profile Image">
     </div>
   </section>
 
@@ -963,89 +961,173 @@
 
   <!-- Projects Timeline Section -->
   <section id="projects">
-    <h2>
-      My Projects
-    </h2>
+    <h2>My Projects</h2>
 
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="mern">MERN</button>
+      <button class="filter-btn" data-filter="frontend">HTML / CSS / JS</button>
+    </div>
+
+    <!-- Projects Grid -->
     <div class="projects-grid">
-      <!-- 1. Electronic Dukaan Project (New) -->
-      <div class="project-card">
+
+      <!-- MERN: Electronic Dukaan -->
+      <div class="project-card mern">
         <img src="https://i.ibb.co/dw7vqGLX/Screenshot-2025-08-25-181654.png" alt="Electronic Dukaan Preview">
         <div class="card-content">
           <h3>Electronic Dukaan</h3>
           <p>A sleek e-commerce platform for electronics, built with modern UI and user-friendly features.</p>
-          <a href="https://elecronic-dukaan.vercel.app/" class="view" target="_blank">
-            View <i class="fas fa-arrow-right"></i>
-          </a>
+          <a href="https://elecronic-dukaan.vercel.app/" class="view" target="_blank">View <i
+              class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
-
-
-      <!-- 2. Hotel Room Booking -->
-      <div class="project-card">
+      <!-- MERN: Hotel Booking -->
+      <div class="project-card mern">
         <img src="https://i.postimg.cc/6Qxfq80F/Screenshot-2025-08-06-105211.png" alt="Hotel Booking">
         <div class="card-content">
           <h3>Hotel Room Booking Website</h3>
           <p>A full-stack hotel booking app with login/signup, booking history, and responsive UI. Built using Node.js,
             Express, MongoDB, and EJS.</p>
-          <a href="https://hotel-booking-system-97d2.onrender.com" class="view" target="_blank">
-            View <i class="fas fa-arrow-right"></i>
-          </a>
+          <a href="https://hotel-booking-system-97d2.onrender.com" class="view" target="_blank">View <i
+              class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
-      <!-- Other project cards follow... -->
-      <!-- Student Attendance -->
-      <div class="project-card">
+      <!-- MERN: Student Attendance -->
+      <div class="project-card mern">
         <img src="https://i.postimg.cc/DZZJwhtt/Screenshot-2025-08-06-105310.png" alt="Student Attendance">
         <div class="card-content">
           <h3>Student Attendance Management</h3>
           <p>Tracks and manages student attendance efficiently with a clean interface.</p>
-          <a href="https://student-attendance-management-system-esiq.onrender.com" class="view" target="_blank">
-            View <i class="fas fa-arrow-right"></i>
-          </a>
+          <a href="https://student-attendance-management-system-esiq.onrender.com" class="view" target="_blank">View <i
+              class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
-      <!-- Hotel Rooms Management -->
-      <div class="project-card">
+      <!-- MERN: Hotel Rooms Management -->
+      <div class="project-card mern">
         <img src="https://i.postimg.cc/T2B9FNbR/Screenshot-2025-08-06-105410.png" alt="Hotel Management">
         <div class="card-content">
           <h3>Hotel Rooms Management</h3>
           <p>Comprehensive hotel room reservations and booking management system with admin panel and user interface.
           </p>
-          <a href="https://npmproject.onrender.com/" class="view" target="_blank">
-            View <i class="fas fa-arrow-right"></i>
-          </a>
+          <a href="https://npmproject.onrender.com/" class="view" target="_blank">View <i
+              class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
-      <!-- UFO Shooting Game -->
-      <div class="project-card">
-        <img src="https://i.postimg.cc/hG4bTHk0/Screenshot-2025-08-06-105108.png" alt="UFO Game">
-        <div class="card-content">
-          <h3>Ufo Shooting Game</h3>
-          <p>Fun browser game built with HTML5, CSS, and JS. Control a spaceship and shoot UFOs in space!</p>
-          <a href="https://surajpatel2024.github.io/Ufo-Shooting-Game/" class="view" target="_blank">
-            View <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Intern Dashboard -->
-      <div class="project-card">
+      <!-- MERN: Intern Dashboard -->
+      <div class="project-card mern">
         <img src="https://i.postimg.cc/28LN4tQh/Screenshot-2025-08-06-113624.png" alt="Intern Dashboard">
         <div class="card-content">
           <h3>Intern Dashboard</h3>
           <p>Internship management platform to track progress, centralize workflows, and improve communication.</p>
-          <a href="https://intern-dashboard-8kyq.onrender.com/login" class="view" target="_blank">
-            View <i class="fas fa-arrow-right"></i>
-          </a>
+          <a href="https://intern-dashboard-8kyq.onrender.com/login" class="view" target="_blank">View <i
+              class="fas fa-arrow-right"></i></a>
         </div>
       </div>
+
+      <!-- FRONTEND: UFO Shooting Game -->
+      <div class="project-card frontend">
+
+        <img src="https://i.ibb.co/S4nXMwPJ/Screenshot-2025-09-04-123106.png" alt="Typing">
+        <div class="card-content">
+          <h3>Typing Speed Tester & Certificate Provider</h3>
+          <p>An interactive web app to test and improve your typing speed. Type the given passage within 60 seconds, get
+            real-time feedback on accuracy, and receive a personalized certificate showcasing your WPM. </p>
+          <a href="https://surajpatel2024.github.io/Typing-Tester/" class="view" target="_blank">View <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="project-card frontend">
+ 
+        <img src="https://i.ibb.co/ksy0wVk0/Screenshot-2025-09-04-123952.png" alt="Handy">
+        <div class="card-content">
+          <h3>My Handy Tools</h3>
+          <p>Text ↔ Binary Converter || Text Repeater || Age Calculator || Stylish Text Sender</p>
+          <a href="https://surajpatel2024.github.io/Handy-tools/" class="view" target="_blank">View <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="project-card frontend">
+        <img src="https://i.postimg.cc/hG4bTHk0/Screenshot-2025-08-06-105108.png" alt="UFO Game">
+        <div class="card-content">
+          <h3>Ufo Shooting Game</h3>
+          <p>Fun browser game built with HTML5, CSS, and JS. Control a spaceship and shoot UFOs in space!</p>
+          <a href="https://surajpatel2024.github.io/Ufo-Shooting-Game/" class="view" target="_blank">View <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+     <div class="project-card frontend">
+ 
+  <img src="https://i.ibb.co/MxZSVky4/Screenshot-2025-09-04-124827.png" alt="15august">
+  <div class="card-content">
+    <h3>India's 79th Independence Day</h3>
+    <p>A heartfelt tribute to India's 79th Independence Day, this web page celebrates the spirit of freedom and patriotism.</p>
+    <a href="https://one5august2025.onrender.com/" class="view" target="_blank">View <i class="fas fa-arrow-right"></i></a>
+  </div>
+</div>
+
     </div>
   </section>
+
+  <!-- Filter Script -->
+  <script>
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    const projects = document.querySelectorAll(".project-card");
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+        // Remove active class from all buttons
+        filterBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filter = btn.getAttribute("data-filter");
+
+        projects.forEach(project => {
+          if (filter === "all" || project.classList.contains(filter)) {
+            project.style.display = "block";
+          } else {
+            project.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- Extra Styling -->
+  <style>
+    .filter-buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .filter-btn {
+      background: #222;
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+
+      background-color: var(--main-color);
+    }
+
+    .project-card {
+      display: block;
+      /* default visible */
+    }
+  </style>
+
 
 
 
@@ -1070,130 +1152,130 @@
   </footer>
   <canvas id="bg"></canvas>
 
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
 
-  #bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    pointer-events: none;
-  }
+    #bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
 
-  section {
-    padding: 60px 10%;
-    background: transparent;
-  }
+    section {
+      padding: 60px 10%;
+      background: transparent;
+    }
 
-  .hero {
-    background: transparent;
-    
-  }
-</style>
+    .hero {
+      background: transparent;
 
-<script>
-  const canvas = document.getElementById("bg");
-  const ctx = canvas.getContext("2d");
+    }
+  </style>
 
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  <script>
+    const canvas = document.getElementById("bg");
+    const ctx = canvas.getContext("2d");
 
-  let particles = [];
-  const mouse = { x: null, y: null, radius: 150 };
-
-  window.addEventListener("mousemove", (e) => {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
-  });
-
-  window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+
+    let particles = [];
+    const mouse = { x: null, y: null, radius: 150 };
+
+    window.addEventListener("mousemove", (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    });
+
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      init();
+    });
+
+    class Particle {
+      constructor(x, y) {
+        this.x = x;
+        this.y = y;
+        this.size = Math.random() * 2 + 1;
+        this.baseX = x;
+        this.baseY = y;
+        this.density = Math.random() * 40 + 10;
+        this.alpha = Math.random(); // starting opacity
+        this.fadeSpeed = Math.random() * 0.02 + 0.005; // blink speed
+      }
+
+      draw() {
+        ctx.fillStyle = `rgba(200,200,200,${this.alpha})`; // glowing white/gray
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.fill();
+      }
+
+      update() {
+        // particle attraction
+        let dx = mouse.x - this.x;
+        let dy = mouse.y - this.y;
+        let distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < mouse.radius) {
+          this.x -= dx / this.density;
+          this.y -= dy / this.density;
+        } else {
+          if (this.x !== this.baseX) {
+            let dx = this.x - this.baseX;
+            this.x -= dx / 30;
+          }
+          if (this.y !== this.baseY) {
+            let dy = this.y - this.baseY;
+            this.y -= dy / 30;
+          }
+        }
+
+        // blinking / glowing effect
+        this.alpha += this.fadeSpeed;
+        if (this.alpha >= 1 || this.alpha <= 0) {
+          this.fadeSpeed = -this.fadeSpeed; // reverse fade
+        }
+
+        this.draw();
+      }
+    }
+
+    function init() {
+      particles = [];
+      let numberOfParticles = 800;
+      for (let i = 0; i < numberOfParticles; i++) {
+        let x = Math.random() * canvas.width;
+        let y = Math.random() * canvas.height;
+        particles.push(new Particle(x, y));
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particles.length; i++) {
+        particles[i].update();
+      }
+      requestAnimationFrame(animate);
+    }
+
     init();
-  });
-
-  class Particle {
-    constructor(x, y) {
-      this.x = x;
-      this.y = y;
-      this.size = Math.random() * 2 + 1;
-      this.baseX = x;
-      this.baseY = y;
-      this.density = Math.random() * 40 + 10;
-      this.alpha = Math.random(); // starting opacity
-      this.fadeSpeed = Math.random() * 0.02 + 0.005; // blink speed
-    }
-
-    draw() {
-      ctx.fillStyle = `rgba(200,200,200,${this.alpha})`; // glowing white/gray
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-      ctx.closePath();
-      ctx.fill();
-    }
-
-    update() {
-      // particle attraction
-      let dx = mouse.x - this.x;
-      let dy = mouse.y - this.y;
-      let distance = Math.sqrt(dx * dx + dy * dy);
-
-      if (distance < mouse.radius) {
-        this.x -= dx / this.density;
-        this.y -= dy / this.density;
-      } else {
-        if (this.x !== this.baseX) {
-          let dx = this.x - this.baseX;
-          this.x -= dx / 30;
-        }
-        if (this.y !== this.baseY) {
-          let dy = this.y - this.baseY;
-          this.y -= dy / 30;
-        }
-      }
-
-      // blinking / glowing effect
-      this.alpha += this.fadeSpeed;
-      if (this.alpha >= 1 || this.alpha <= 0) {
-        this.fadeSpeed = -this.fadeSpeed; // reverse fade
-      }
-
-      this.draw();
-    }
-  }
-
-  function init() {
-    particles = [];
-    let numberOfParticles = 800;
-    for (let i = 0; i < numberOfParticles; i++) {
-      let x = Math.random() * canvas.width;
-      let y = Math.random() * canvas.height;
-      particles.push(new Particle(x, y));
-    }
-  }
-
-  function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (let i = 0; i < particles.length; i++) {
-      particles[i].update();
-    }
-    requestAnimationFrame(animate);
-  }
-
-  init();
-  animate();
-</script>
+    animate();
+  </script>
 
 
 
@@ -1317,7 +1399,7 @@
       document.documentElement.style.setProperty("--shadow-color", newColor + "66");
 
       index = (index + 1) % colors.length; // loop back to start
-    }, 5000); // change every 3 seconds
+    }, 8000); // change every 3 seconds
 
 
 
